@@ -3,21 +3,6 @@ using System.Collections.Generic;
 
 public class Questions
 {
-    // public string _name = "";
-    // public List<Job> _jobs = new List<Job>();
-    
-    // public void Display()
-    // {
-    //     Console.WriteLine($"Name: {_name}");
-    //     Console.WriteLine("Jobs:");
-    //     foreach (Job job in _jobs)
-    //     {
-    //         job.Display();
-    //     }
-    //     // _jobs[0].Display();
-    //     // _jobs[1].Display();
-    //}
-
     public List<string> _questionList = new List<string>()
     {
         "Who was the most interesting person I interacted with today?",

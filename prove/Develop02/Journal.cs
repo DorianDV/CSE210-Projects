@@ -4,14 +4,10 @@ using System.IO;
 
 public class Journal
 {
-    public List<Entry> _entryList = new List<Entry>();
-
     Entry entry = new Entry();
 
     public void Add()
     {
-        
-        
         Questions questions = new Questions();
         //Get Date
         DateTime theCurrentTime = DateTime.Now;
@@ -20,18 +16,6 @@ public class Journal
         entry._questions.Add(questions.Display());
         entry._answers.Add(Console.ReadLine());
         entry._dates.Add(dateText);  
-
-        // Questions questions = new Questions();
-        // //Get Date
-        // DateTime theCurrentTime = DateTime.Now;
-        // string dateText = theCurrentTime.ToShortDateString();
-        // // Instance of Entry class            
-        // Entry entry = new Entry();
-        // entry._question = questions.Display();
-        // entry._answer = Console.ReadLine();
-        // entry._date = dateText;        
-
-        
     }
 
     public void Save(string _filename)
@@ -53,7 +37,6 @@ public class Journal
 
     public void Load(string _filename)
     {
-        //string filename = "myFile.txt";
         string[] lines = System.IO.File.ReadAllLines(_filename);
 
         entry._answers.Clear();
