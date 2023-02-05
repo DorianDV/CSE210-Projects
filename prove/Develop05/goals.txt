@@ -1,0 +1,5 @@
+1304
+SimpleGoal:correr,10 min,50,True
+EternalGoal:leer,10 min,50
+CheckListGoal:templo,3 veces,50,500,3,3
+SimpleGoal:correr mucho,hola hola,504,True
