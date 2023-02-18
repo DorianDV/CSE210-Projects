@@ -17,8 +17,5 @@ public class Swimming : Activity
     {
         return _laps * 50 / 1000;
     }
-    public override float GetSpeed()
-    {
-        return GetDistance() / GetLength() * 60;
-    }
+    
 }
